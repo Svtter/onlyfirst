@@ -15,8 +15,9 @@ class StrTest(unittest.TestCase):
         test = "hello"
         world = "hello"
         """
+
+        # self.fail(test.split('\n'))
         self.assertEqual(
             onlyfirst.process_paragraph(test),
-            """test =\nworld =\n
-            """
+            """test =\nworld =\n"""
         )
